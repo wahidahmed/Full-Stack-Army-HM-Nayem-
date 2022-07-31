@@ -19,4 +19,4 @@ This is a full stack Journey (MERN) from HM Nayem you tube channel
 #if a function is called with parenthesis that time it is meant that the function is invoked, that means it is give a return result. if function is called without parenthesis, it means it is give the work of the function  not the returning result.
 Exemple:-
   1. const fn=functionTst(); it return value in fn
-  2. const fn=fuinctonTst; it store the work on functonTst in fn
+  2. const fn=fuinctonTst; it store the work on functonTst in fn . in this case if you wnat to call the functionTst, you can call it by fn()
