@@ -20,3 +20,29 @@ This is a full stack Journey (MERN) from HM Nayem you tube channel
 Exemple:-
   1. const fn=functionTst(); it return value in fn
   2. const fn=fuinctonTst; it store the work on functonTst in fn . in this case if you wnat to call the functionTst, you can call it by fn()
+<h5>runtime function</h5>
+
+const operations=[
+    {
+        args:[10,20],
+        params:['a','b'],
+        body:'console.log("a+b=",a+b)'
+    },
+    {
+        args:[10,20],
+        params:['a','b'],
+        body:'console.log("a-b=",a-b)'
+    },
+    {
+        args:[10,20],
+        params:['a','b'],
+        body:'console.log("a*b=",a*b)'
+    }
+]
+
+
+operations.forEach((op)=>{
+    const fn=new Function(...op.params,op.body);
+
+    fn(...op.args);
+})
